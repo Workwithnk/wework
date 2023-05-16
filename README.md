@@ -10,3 +10,6 @@ command to start project :
 
     3. to build the project :
     ▶️ npm run build
+
+Site information :
+https://weworkapp.vercel.app/
