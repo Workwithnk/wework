@@ -1,5 +1,26 @@
+//color variables
+$appBg: #f2fbf9;
+$lightWhite: #e9ebeb;
+$lightGreen: #00b686;
+$darkGreen: #04433b;
+$lightGray: #7b8786;
+$darkGray: #233735;
+
+//font face
+@font-face {
+  font-family: "prox";
+  src: url("../assets/fonts/proxima-novo.otf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  font-weight: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
   outline: none;
+  background-color: $appBg;
 }
+
+@import "../styles/components/nav.scss";
