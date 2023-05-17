@@ -80,41 +80,19 @@ const Navbar = () => {
             </li>
             {menuNavLink.map((linksData) => {
               return (
-                <li className="nav__menu-list-item">
+                <li className="nav__menu-list-item" key={linksData.id}>
                   <Image
                     src={linksData.logoUrl}
                     alt={`${linksData.linkName} icon`}
                   />
-                  <div className="nav__menu-list-item-userDetails">
-                    <p>{linksData.linkName}</p>
+                  <div className="nav__menu-list-item-container">
+                    <p className="nav__menu-list-item-link">
+                      {linksData.linkName}
+                    </p>
                   </div>
                 </li>
               );
             })}
-            {/* <li className="nav__menu-list-item">
-            <Image src={searchIcon} alt="search icon" />
-            <div className="nav__menu-list-item-userDetails">
-              <p>Search</p>
-            </div>
-          </li>
-          <li className="nav__menu-list-item">
-            <Image src={mailIcon} alt="mail icon" />
-            <div className="nav__menu-list-item-userDetails">
-              <p>Inbox</p>
-            </div>
-          </li>
-          <li className="nav__menu-list-item">
-            <Image src={notificationIcon} alt="search icon" />
-            <div className="nav__menu-list-item-userDetails">
-              <p>Notifications</p>
-            </div>
-          </li>
-          <li className="nav__menu-list-item">
-            <Image src={helpIcon} alt="search icon" />
-            <div className="nav__menu-list-item-userDetails">
-              <p>Help</p>
-            </div>
-          </li> */}
           </ul>
         </div>
       )}

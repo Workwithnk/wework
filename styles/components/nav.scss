@@ -27,7 +27,7 @@
       cursor: pointer;
       position: absolute;
       top: 30px;
-      right: 35px;
+      right: 17px;
     }
     &-list {
       display: flex;
@@ -57,6 +57,11 @@
           width: 22px;
           height: 22px;
           margin-right: 22px;
+        }
+
+        &-link {
+          color: $darkGray;
+          font-family: "prox", sans-serif;
         }
 
         &-userDetails {
