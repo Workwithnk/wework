@@ -1,0 +1,124 @@
+.compProfile {
+  margin: 18px 10px;
+  &-left {
+    display: none;
+  }
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+
+    h2 {
+      font-size: 16px;
+      font-family: "prox", sans-serif;
+    }
+    &-triggers {
+      display: none;
+    }
+  }
+
+  &__work {
+    background: url("../../assets/images/weWorkBg.png") center center/cover;
+    width: 100%;
+    height: 240px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    &-cont,
+    &-cont-inner,
+    &-details {
+      background-color: transparent;
+    }
+
+    &-cont {
+      display: flex;
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 5px 10px;
+      border-radius: 5px;
+      border: 1px solid #d3d7d7;
+      margin-top: 10px;
+
+      > div:last-child {
+        border: none;
+      }
+      &-inner {
+        display: flex;
+        align-items: center;
+        border-right: 1px solid #d3d7d7;
+        padding: 0 10px;
+        img {
+          width: 17px;
+          height: 17px;
+          cursor: pointer;
+        }
+        span {
+          margin-left: 3px;
+          font-size: 12px;
+        }
+      }
+    }
+
+    &-details {
+      background-color: rgba(255, 255, 255, 0.7);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 280px;
+      height: 107px;
+      transform: translate(-50%, -50%);
+
+      img {
+        width: 119px;
+        height: 30px;
+      }
+
+      h3 {
+        margin-top: 11px;
+        font-size: 13px;
+        font-family: "prox", sans-serif;
+      }
+    }
+  }
+
+  &__socialIcons {
+    display: flex;
+    margin: 17px 0px;
+
+    img {
+      width: 18px;
+      height: 18px;
+    }
+
+    &-chat-cont {
+      position: relative;
+      span {
+        position: absolute;
+        top: -4px;
+        right: 10px;
+        background-color: #00b686;
+        color: #fff;
+        font-size: 10px;
+        padding: 1px 4px;
+        border-radius: 16px;
+      }
+    }
+
+    &-chat {
+      padding-right: 15px;
+      border-right: 1px solid #d3d7d7;
+    }
+    &-share {
+      margin-left: 10px;
+    }
+  }
+}

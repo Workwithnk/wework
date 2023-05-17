@@ -3,6 +3,7 @@ import weWork from "../assets/images/weWork.png";
 import sals from "../assets/images/salsforce.png";
 import plus from "../assets/images/plus.png";
 import ScopeRecap from "../components/ScopeRecap";
+import Tabs from "../components/Tabs";
 
 const Home = () => {
   return (
@@ -38,6 +39,7 @@ const Home = () => {
         </div>
       </div>
       <ScopeRecap />
+      <Tabs />
     </div>
   );
 };

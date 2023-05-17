@@ -57,9 +57,13 @@
         clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%);
 
         h2 {
-          width: 20%;
+          width: 50%;
           font-family: prox;
           background-color: transparent;
+
+          @media screen and (min-width: "400px") {
+            width: 20%;
+          }
         }
       }
       &-foot {
