@@ -2,6 +2,7 @@
   &__intro {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 0 10px;
     padding: 10px 0 14px;
     &-title {
@@ -24,6 +25,68 @@
       outline: none;
       cursor: pointer;
       padding: 4px 10px;
+    }
+    &-banner {
+      margin-left: 10px;
+      margin-right: 10px;
+      position: relative;
+      &-bg {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+      }
+      &-container {
+        border-radius: 20px;
+        overflow: hidden;
+        position: relative;
+        background: url("../assets/images/banner.png") center center/cover;
+        width: 100%;
+        height: 160px;
+        z-index: 0;
+      }
+      &-proposal {
+        position: absolute;
+        right: 0;
+        height: 100%;
+        width: 50%;
+        top: 0;
+        background-color: rgba(255, 255, 255, 0.7);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%);
+
+        h2 {
+          width: 20%;
+          font-family: prox;
+          background-color: transparent;
+        }
+      }
+      &-foot {
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        background-color: #fff;
+        padding: 5px 11px;
+        border-radius: 5px;
+        margin-left: 20px;
+        margin-top: -25px;
+        z-index: 1;
+        position: relative;
+
+        &-logo {
+          width: 40px;
+          height: 40px;
+          background-color: #fff;
+        }
+        &-plus {
+          width: 10px;
+          height: 10px;
+          margin-left: 10px;
+          margin-right: 10px;
+          background-color: #fff;
+        }
+      }
     }
   }
 }

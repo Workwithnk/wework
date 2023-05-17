@@ -1,0 +1,33 @@
+.scopRecap {
+  display: flex;
+  margin: 10px 10px;
+  justify-content: space-between;
+  align-items: center;
+  h2 {
+    font-family: "prox", sans-serif;
+    font-size: 16px;
+  }
+  &__progress {
+    max-width: 170px;
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+
+    &-text {
+      display: flex;
+      justify-content: space-between;
+      p {
+        color: $lightGray;
+        font-size: 12px;
+        font-family: "prox", sans-serif;
+        font-weight: 300;
+      }
+      &-percent {
+        color: $lightGreen !important;
+        font-weight: bold !important;
+      }
+    }
+  }
+}
