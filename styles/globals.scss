@@ -23,6 +23,8 @@ $darkGray: #233735;
 }
 body {
   background-color: $appBg;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 @import "../styles/components/nav.scss";

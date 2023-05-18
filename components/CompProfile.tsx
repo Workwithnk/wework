@@ -15,7 +15,16 @@ import share from "../assets/images/share.png";
 function CompProfile() {
   return (
     <div className="compProfile">
-      <div className="compProfile-left"></div>
+      <div className="compProfile-left">
+        <h5>Overview</h5>
+        <ul>
+          <li>Welcome</li>
+          <li>Product Capabilities</li>
+          <li>Customer Success Stories</li>
+          <li>File Sharing</li>
+          <li>Our Deck</li>
+        </ul>
+      </div>
       <div className="compProfile-right">
         <div className="compProfile__container">
           <div className="compProfile__nav">
@@ -53,7 +62,7 @@ function CompProfile() {
           </div>
           <div className="compProfile__work-details">
             <Image src={weWork} alt="wework logo" />
-            <h3>For all the ways you work, we're here</h3>
+            <h3>For all the ways you work, we are here</h3>
           </div>
         </div>
         <div className="compProfile__socialIcons">

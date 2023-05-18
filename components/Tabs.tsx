@@ -1,5 +1,5 @@
 import { useState } from "react";
-import CompProfile from "./compProfile";
+import CompProfile from "./CompProfile";
 
 function Tabs() {
   const [tab, setTab] = useState("basicinfo");

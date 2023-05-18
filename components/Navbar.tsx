@@ -9,7 +9,7 @@ import mailIcon from "../assets/images/mail.png";
 import notificationIcon from "../assets/images/notification.png";
 import helpIcon from "../assets/images/questions.png";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const menuNavLink = [
   {
@@ -36,6 +36,12 @@ const menuNavLink = [
 
 const Navbar = () => {
   const [isMenuOpened, setMenuOpened] = useState(false);
+
+  useEffect(() => {
+    if (window.innerWidth >= 768) {
+      setMenuOpened(true);
+    }
+  }, []);
 
   return (
     <nav className="nav">
